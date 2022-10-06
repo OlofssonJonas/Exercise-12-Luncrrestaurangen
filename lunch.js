@@ -1,4 +1,5 @@
 console.log("Hello World!")
+console.log("hej")
 const weekday = ("Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag");
 const d = new Date();
 let day = weekday[getDay()]
@@ -15,3 +16,4 @@ body.innerHTML = day
 //torsdagar - ärtsoppa m. pannkakor
 //fredagar - tacos
 //lördag, söndag - Stängt
+
