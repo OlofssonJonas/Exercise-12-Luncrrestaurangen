@@ -1,19 +1,40 @@
-console.log("Hello World!")
-console.log("hej")
-const weekday = ("Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag");
-const d = new Date();
-let day = weekday[getDay()]
+console.log("Hello World!");
 
-
-
+const date = new Date();
+const today = date.getDay()
 const body = document.querySelector("body");
-
-body.innerHTML = day
-
+const ul = document.createElement("ul")
 
 
+const food = ["stängt","stek", "fläsk m. löksås", "köttbullar", "ärtsoppa m. pannkakor", "tacos", "stängt", ];
 
-//torsdagar - ärtsoppa m. pannkakor
-//fredagar - tacos
-//lördag, söndag - Stängt
 
+
+switch(today) {
+    case 1:
+        console.log(food[1])
+        break;
+    case 2:
+        console.log(food[2])
+        break;
+    case 3:
+        console.log(food[3])
+        break;
+    case 4:
+        console.log(food[4])
+        break;
+    case 5:
+        console.log(food[5])
+        break;
+        default:
+            console.log("stängt")
+        }
+        
+        //body.innerHTML = today
+        
+        
+
+
+//SPLICE AND SLICE TAR BORT OBJEKT FRÅN EN ARRAY
+
+//WINDOW.LOCATION*/
