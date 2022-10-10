@@ -3,10 +3,10 @@ console.log("Hello World!");
 const date = new Date();
 const today = date.getDay()
 const body = document.querySelector("body");
-const ul = document.createElement("ul")
+const p = document.createElement("p")
 
 
-const food = ["stängt","stek", "fläsk m. löksås", "köttbullar", "ärtsoppa m. pannkakor", "tacos", "stängt", ];
+const food = ["stängt","stek", "fläsk m. löksås", "köttbullar", "ärtsoppa m. pannkakor", "tacos", "stängt"];
 
 
 
@@ -28,13 +28,16 @@ switch(today) {
         break;
         default:
             console.log("stängt")
+            console.log(food[2])
         }
-        
-        //body.innerHTML = today
+        body.appendChild(p)
+        p.innerText = food[today]
+
         
         
 
 
-//SPLICE AND SLICE TAR BORT OBJEKT FRÅN EN ARRAY
+/*SPLICE AND SLICE TAR BORT OBJEKT FRÅN EN ARRAY
+Q&A 7/10*/
 
 //WINDOW.LOCATION*/
